@@ -132,7 +132,7 @@ button{font:inherit;color:inherit;border:0;background:none;cursor:pointer}
       <p class="lab">TONARI BIZ — DELIVERY SALES</p>
       <h1>デリバリー営業<br>知識テスト</h1>
       <p>ロケットナウ・Uber Eats・出前館の営業に必要な知識を確認します。全問回答すると、点数と全問の解説が表示されます。</p>
-      <div class="rules"><div><b>20</b><small>問（1問2点）</small></div><div><b>40</b><small>点満点</small></div><div><b>40</b><small>点のみ合格</small></div></div>
+      <div class="rules"><div><b>3</b><small>本のテスト＋任意問題</small></div><div><b>2</b><small>点／1問</small></div><div><b>満点</b><small>のみ合格</small></div></div>
     </div>
     <div class="card">
       <h2>お名前</h2>
@@ -143,7 +143,7 @@ button{font:inherit;color:inherit;border:0;background:none;cursor:pointer}
       <div class="tests" id="tests"></div>
     </div>
     <div style="margin-top:20px"><button class="btn" id="start" disabled>テストを始める</button></div>
-    <p class="note">満点（40点）のみ合格です。何度でも受け直せます。</p>
+    <p class="note">満点のみ合格です（任意の確認問題は合否に関係しません）。何度でも受け直せます。</p>
   </section>
 
   <!-- quiz -->
@@ -178,7 +178,7 @@ button{font:inherit;color:inherit;border:0;background:none;cursor:pointer}
 (function(){
   var Q=window.QUIZ, $=function(id){return document.getElementById(id)}, K=['A','B','C','D'];
   var st={test:null,name:'',i:0,ans:[]};
-  var DESC={t1:'商材知識・店舗向け条件・トーク',t2:'受注書類・受注ルール'};
+  var DESC={t1:'動画01のあと：手数料・入金・3社の違い',tc:'動画05のあと：電話のトークと断り対応',t2:'動画06のあと：受注書類・受注ルール',opt:'任意（合格ゲートに含まない）'};
   try{st.name=localStorage.getItem('quiz_name')||''}catch(e){}
   $('name').value=st.name;
 
